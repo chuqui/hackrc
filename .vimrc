@@ -21,10 +21,6 @@ Plugin 'wincent/command-t'        " Requires running 'rake make' on plugin folde
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'honza/vim-snippets'
 Plugin 'ntpeters/vim-better-whitespace'
-" Plugin 'sirver/ultisnips'                   " Enable for vim >=7.4
-Plugin 'MarcWeber/vim-addon-mw-utils'       " Disable for vim >= 7.4
-Plugin 'tomtom/tlib_vim'                    " Disable for vim >= 7.4
-Plugin 'garbas/vim-snipmate'                " Disable for vim >= 7.4
 
 " Web related support
 Plugin 'tpope/vim-markdown'
