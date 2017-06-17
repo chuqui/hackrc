@@ -5,11 +5,11 @@ This is a repo of the dotfiles I care.
 - tmux
 - vimrc
 
-### tmux
+#### tmux
 
 There is nothing special about my tmux config. I've added mouse support to resize and switch windows.
 
-### Vim
+#### Vim
 
 My vim setup uses Vundle as plugin manager. Config & Plugins oriendted to:
 - Project/Files navigation. NERDTree + command-t
@@ -22,7 +22,7 @@ My vim setup uses Vundle as plugin manager. Config & Plugins oriendted to:
 
 I think the best way to set it up is to fork this repo and use your own config, as you will want to update/modify them.
 
-###The way I work on is:
+#### The way I work on is:
 
 - Clone the repo
 - BackUp/Remove the existing .tmux.conf and .vimrc files from my home (if already there)
