@@ -17,10 +17,10 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'rstacruz/sparkup'
 Plugin 'tpope/vim-surround'
 Plugin 'itchyny/lightline.vim'
-Plugin 'wincent/command-t'        " Requires running 'rake make' on plugin folder to build the C extension
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'honza/vim-snippets'
 Plugin 'ntpeters/vim-better-whitespace'
+Plugin 'ctrlpvim/ctrlp.vim'
 
 " Web related support
 Plugin 'tpope/vim-markdown'
@@ -41,6 +41,13 @@ call vundle#end()
 
 " Syntax enable
 syntax enable
+
+" CtrlP Plugin
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+let g:ctrlp_map1 = '<c-P>'
+let g:ctrlp_cmd1 = 'CtrlPMRU'
+let g:ctrlp_working_path_mode = 'w'
 
 " Theme setup
 let g:molokai_original = 1
