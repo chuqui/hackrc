@@ -12,7 +12,7 @@ There is nothing special about my tmux config. I've added mouse support to resiz
 #### Vim
 
 My vim setup uses Vundle as plugin manager. Config & Plugins oriendted to:
-- Project/Files navigation. NERDTree + command-t
+- Project/Files navigation. NERDTree + CtrlP 
 - Better status bar
 - Web development (Markdown, HTML, JS, CSS) (No framework specifics)
 - Exploit development (Python, C/C++)
