@@ -48,6 +48,8 @@ let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_map1 = '<c-P>'
 let g:ctrlp_cmd1 = 'CtrlPMRU'
 let g:ctrlp_working_path_mode = 'w'
+"ctrl+p ignore files in .gitignore
+let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files . -co --exclude-standard', 'find %s -type f']
 
 " Theme setup
 let g:molokai_original = 1
@@ -67,5 +69,5 @@ set shiftwidth=4
 set expandtab
 
 filetype plugin indent on
-set number
-
+set relativenumber
+set cursorline
