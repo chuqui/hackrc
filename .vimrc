@@ -70,4 +70,6 @@ set expandtab
 
 filetype plugin indent on
 set relativenumber
+set number
 set cursorline
+
