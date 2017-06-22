@@ -18,9 +18,13 @@ Plugin 'rstacruz/sparkup'
 Plugin 'tpope/vim-surround'
 Plugin 'itchyny/lightline.vim'
 Plugin 'terryma/vim-multiple-cursors'
+Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'tomtom/tlib_vim'
+Plugin 'garbas/vim-snipmate'
 Plugin 'honza/vim-snippets'
 Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'mileszs/ack.vim'
 
 " Web related support
 Plugin 'tpope/vim-markdown'
@@ -43,10 +47,8 @@ call vundle#end()
 syntax enable
 
 " CtrlP Plugin
-let g:ctrlp_map = '<c-p>'
+let g:ctrlp_map = '<C-p>'
 let g:ctrlp_cmd = 'CtrlP'
-let g:ctrlp_map1 = '<c-P>'
-let g:ctrlp_cmd1 = 'CtrlPMRU'
 let g:ctrlp_working_path_mode = 'w'
 "ctrl+p ignore files in .gitignore
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files . -co --exclude-standard', 'find %s -type f']
@@ -59,9 +61,26 @@ colorscheme molokai
 let g:NERDTreeDirArrowExpandable = '▸'
 let g:NERDTreeDirArrowCollapsible = '▾'
 
+" vim multiple cursors
+" let g:multi_cursor_use_default_mapping=0
+" let g:multi_cursor_start_key = '<Leader>n'
+" let g:multi_cursor_start_word_key = 'g<Leader>n'
+" let g:multi_cursor_next_key = '<Leader>n'
+" let g:multi_cursor_prev_key = '<Leader>b'
+" let g:multi_cursor_skip_key = '<Leader>s'
+" let g:multi_cursor_quit_key = '<Esc>'
+
 " C/C++ setup
 let  g:C_UseTool_cmake    = 'yes'
 let  g:C_UseTool_doxygen = 'yes'
+
+" Snipets config
+let g:snipMate = {}
+let g:snipMate.scope_aliases = {}
+
+" Better whitespace config.
+let g:better_whitespace_verbosity=1
+autocmd BufEnter * EnableStripWhitespaceOnSave
 
 " tab preferences setup
 set tabstop=4
