@@ -25,6 +25,7 @@ Plugin 'honza/vim-snippets'
 Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'mileszs/ack.vim'
+Plugin 'tpope/vim-fugitive'
 
 " Web related support
 Plugin 'tpope/vim-markdown'
@@ -56,6 +57,20 @@ let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files . -co --exclude-stand
 " Theme setup
 let g:molokai_original = 1
 colorscheme molokai
+
+" Lightline config
+let g:lightline = {
+    \ 'colorscheme': 'wombat',
+    \ 'active': {
+    \   'right': [ [ 'lineinfo' ],
+    \              [ 'percent' ],
+    \              [ 'gitbranch', 'fileformat', 'fileencoding', 'filetype'] ]
+    \ },
+    \ 'component_function': {
+    \   'gitbranch': 'fugitive#head'
+    \ },
+    \ }
+set laststatus=2
 
 " NERDTree setup
 let g:NERDTreeDirArrowExpandable = '▸'
