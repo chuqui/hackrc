@@ -26,6 +26,7 @@ Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'mileszs/ack.vim'
 Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-sensible'
 
 " Web related support
 Plugin 'tpope/vim-markdown'
@@ -57,6 +58,8 @@ let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files . -co --exclude-stand
 " Theme setup
 let g:molokai_original = 1
 colorscheme molokai
+hi CursorLine ctermbg=238 cterm=none
+hi CursorColumn ctermbg=238 cterm=none
 
 " Lightline config
 let g:lightline = {
@@ -106,4 +109,4 @@ filetype plugin indent on
 set relativenumber
 set number
 set cursorline
-
+set cursorcolumn
