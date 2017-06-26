@@ -5,6 +5,7 @@ This is a repo of the dotfiles I care.
 - tmux
 - vimrc
 - ranger
+- terminal profile file
 
 #### tmux
 
