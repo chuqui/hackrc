@@ -27,6 +27,7 @@ Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'mileszs/ack.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-sensible'
+Plugin 'tpope/vim-rhubarb'
 
 " Web related support
 Plugin 'tpope/vim-markdown'
@@ -100,9 +101,9 @@ let g:snipMate.scope_aliases = {}
 let g:better_whitespace_verbosity=1
 autocmd BufEnter * EnableStripWhitespaceOnSave
 
-" tab preferences setup
-set tabstop=4
-set shiftwidth=4
+" Tab preferences setup
+set tabstop=2
+set shiftwidth=2
 set expandtab
 
 filetype plugin indent on
@@ -110,3 +111,11 @@ set relativenumber
 set number
 set cursorline
 set cursorcolumn
+
+" No bad habits
+noremap <Up> <NOP>
+noremap <Down> <NOP>
+noremap <Left> <NOP>
+noremap <Right> <NOP>
+
+set cmdheight=2
