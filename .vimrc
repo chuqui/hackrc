@@ -99,7 +99,7 @@ let g:snipMate.scope_aliases = {}
 
 " Better whitespace config.
 let g:better_whitespace_verbosity=1
-let g:strip_whitespace_on_save = 1
+let g:strip_whitespace_on_save=1
 
 " Tab preferences setup
 set tabstop=2
