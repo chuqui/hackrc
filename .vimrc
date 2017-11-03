@@ -62,6 +62,9 @@ colorscheme molokai
 hi CursorLine ctermbg=238 cterm=none
 hi CursorColumn ctermbg=238 cterm=none
 
+" Clipboard
+set clipboard=unnamed
+
 " Lightline config
 let g:lightline = {
     \ 'colorscheme': 'wombat',
