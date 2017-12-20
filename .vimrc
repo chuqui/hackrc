@@ -42,7 +42,7 @@ Plugin 'davidhalter/jedi-vim'
 Plugin 'c.vim'
 
 " Theme plugin
-Plugin 'tomasr/molokai'
+Plugin 'w0ng/vim-hybrid'
 
 call vundle#end()
 
@@ -57,10 +57,8 @@ let g:ctrlp_working_path_mode = 'w'
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files . -co --exclude-standard', 'find %s -type f']
 
 " Theme setup
-let g:molokai_original = 1
-colorscheme molokai
-hi CursorLine ctermbg=238 cterm=none
-hi CursorColumn ctermbg=238 cterm=none
+set background=dark
+colorscheme hybrid
 
 " Clipboard
 set clipboard=unnamed
