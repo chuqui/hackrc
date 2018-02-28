@@ -18,9 +18,7 @@ Plugin 'rstacruz/sparkup'
 Plugin 'tpope/vim-surround'
 Plugin 'itchyny/lightline.vim'
 Plugin 'terryma/vim-multiple-cursors'
-Plugin 'MarcWeber/vim-addon-mw-utils'
-Plugin 'tomtom/tlib_vim'
-Plugin 'garbas/vim-snipmate'
+Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
 Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'ctrlpvim/ctrlp.vim'
@@ -95,8 +93,7 @@ let  g:C_UseTool_cmake    = 'yes'
 let  g:C_UseTool_doxygen = 'yes'
 
 " Snipets config
-let g:snipMate = {}
-let g:snipMate.scope_aliases = {}
+let g:UltiSnipsExpandTrigger="<tab>"
 
 " Better whitespace config.
 let g:better_whitespace_verbosity=1
